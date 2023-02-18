@@ -1,0 +1,45 @@
+/* Frequently Asked Questions */
+
+.faqs > .container {
+  background-color: var(--white);
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion {
+  width: 800px;
+}
+
+.item {
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.title {
+  color: #cf711f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content {
+  color: grey;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.plusminus {
+  font-size: 40px;
+  margin-left: auto;
+}
