@@ -33,6 +33,11 @@ body {
   gap: 0 9.6rem;
 }
 
+.hero a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .heading-primary {
   font-size: 5.2rem;
   color: #333;
@@ -88,7 +93,6 @@ body {
 .btn--fill:hover,
 .btn--fill:active {
   background-color: #cf711f;
-  text-decoration: underline;
 }
 
 .btn--outline:hover,
@@ -96,7 +100,7 @@ body {
   background-color: #fdf2e9;
   /* Now we'll not use border as in border the outlines are on the outside. Instead we'll use the outline or box-shadow property */
   box-shadow: inset 0px 0px 0px 3px #fff;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   /* outline: #fff solid 3px; */
 }
 

@@ -67,6 +67,7 @@
 
 .opening-buttons:hover span {
   padding-right: 15px;
+  color: #ffffff;
 }
 
 .opening-buttons:hover span:after {

@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -16,7 +17,7 @@ const HeroSection = () => {
               your community.
             </p>
             <a href="#" class="btn btn--fill margin-right-btn">
-              Create Adoption Post
+              <Link to="/createadoption"> Create Adoption Post </Link>
             </a>
             <a href="#" class="btn btn--outline margin-right-btn">
               Learn more &darr;
