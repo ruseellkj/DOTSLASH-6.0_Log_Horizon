@@ -7,6 +7,7 @@ import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
 import Home from "./homepage/home";
+import Footer from "./footer/footer";
 import CreateAdoption from "./pages/CreateAdoption";
 import Adoptions from "./pages/Adoptions";
 
@@ -79,6 +80,7 @@ function App() {
           element={<CreateAdoption isAuth={isAuth} />}
         />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
