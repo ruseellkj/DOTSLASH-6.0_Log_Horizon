@@ -77,7 +77,7 @@ const Volunteer = () => {
       </div>
     </div>
     <button type="submit" className="opening-buttons">
-        <span>Start Donating</span>
+        <span>Start Volunteering</span>
     </button>
   </form>
 </div>
