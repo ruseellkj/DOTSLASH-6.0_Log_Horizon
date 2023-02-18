@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
+import HeroSection from "../components/HeroSection";
 
 function Adoptions({ isAuth }) {
   const [adoptionLists, setAdoptionLists] = useState([]);
@@ -24,33 +25,38 @@ function Adoptions({ isAuth }) {
     getPosts();
   }, [deletePost]);
   return (
-    <div className="homePage">
-      {adoptionLists.map((post) => {
-        return (
-          <div className="post">
-            <div className="postHeader">
-              <div className="title">
-                <h1> {post.title}</h1>
+    <div>
+      <HeroSection />
+      <div className="homePage">
+        {adoptionLists.map((post) => {
+          return (
+            <div className="post">
+              <div className="postHeader">
+                <div className="title">
+                  <h1> {post.title}</h1>
+                </div>
+                <div className="deletePost">
+                  {isAuth && post.author.id === auth.currentUser.uid && (
+                    <button
+                      onClick={() => {
+                        deletePost(post.id);
+                      }}
+                    >
+                      {" "}
+                      &#128465;
+                    </button>
+                  )}
+                </div>
               </div>
-              <div className="deletePost">
-                {isAuth && post.author.id === auth.currentUser.uid && (
-                  <button
-                    onClick={() => {
-                      deletePost(post.id);
-                    }}
-                  >
-                    {" "}
-                    &#128465;
-                  </button>
-                )}
+              <img src={post.image} alt="" />
+              <div className="postTextContainer">
+                <h4>{post.adoptionText}</h4>{" "}
               </div>
+              <h3>@{post.author.name}</h3>
             </div>
-            <div className="postTextContainer"> {post.adoptionText} </div>
-            <img src={post.image} alt="" />
-            <h3>@{post.author.name}</h3>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }

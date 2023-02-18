@@ -27,12 +27,18 @@ function App() {
       <nav>
         <div>
           <ul>
-            <li>Logo</li>
+            <li>
+              <Link to="/">Logo</Link>
+            </li>
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>About</li>
-            <li>Ways to Help</li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="#">Ways to Help</Link>
+            </li>
           </ul>
         </div>
         <div>
@@ -43,7 +49,9 @@ function App() {
             <li>
               <Link to="/blogs"> Blogs </Link>
             </li>
-            <li>Contact Us</li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
             <li>
               {!isAuth ? (
                 <Link to="/login"> Login </Link>

@@ -35,18 +35,23 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: black;
+  color: #cf711f;
   text-decoration: none;
 }
 
-a {
+nav a {
   color: black;
   text-decoration: none;
   margin: 10px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
-.button {
+nav a:hover {
+  font-weight: bold;
+  color: #cf711f;
+}
+
+nav .button {
   cursor: pointer;
   background-color: #fff;
   border: none;
@@ -59,9 +64,9 @@ a {
   margin-right: 20px;
 }
 
-.button:hover {
-  background-color: grey;
-  color: white;
+nav .button:hover {
+  color: #cf711f;
+  font-weight: bold;
 }
 
 .createPostPage {
@@ -75,7 +80,7 @@ a {
   width: 500px;
   height: auto;
   padding: 20px;
-  background-color: black;
+  background-color: #cf711f;
   border-radius: 12px;
   color: white;
   display: flex;
@@ -227,5 +232,7 @@ textarea {
 }
 
 .post img {
+  display: block;
+  margin: 20px 0;
   width: 100%;
 }
