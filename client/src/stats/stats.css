@@ -1,15 +1,14 @@
 .big-container{
     width:100%;
     height:75vw;
-    border:2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 .stat-image-list{
+    margin-top:3vw;
     width:70%;
-    border:2px solid black;
     height:40%; 
     display: flex;
 }
@@ -19,8 +18,9 @@
 .stat-image{
     display: flex;
     width:100%;
-    border: 2px solid black;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .big-picture{
     width:100%;
@@ -29,7 +29,7 @@
     background-size: 100% 100%;
 }
 .stat-text{
-    
+    margin-top: 1.5vw;
 }
 .big-picture-text{
     color:white;
