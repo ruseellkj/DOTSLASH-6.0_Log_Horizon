@@ -163,6 +163,7 @@ textarea {
 }
 .login-with-google-btn:active {
   background-color: #eeeeee;
+  
 }
 .login-with-google-btn:focus {
   outline: none;

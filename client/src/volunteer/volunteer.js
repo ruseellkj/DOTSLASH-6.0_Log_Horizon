@@ -1,61 +1,86 @@
 import './volunteer.css';
-import map from '../assets/map.png'
+import map from '../assets/map.png';
+import pic from '../assets/Frame18.png';
 const Volunteer = () => {
   return (
     <div className="volunteer">
         <div className="volunteer-landing">
-            <div className="map">
-                <img src={map}/>
+            <div className="volunteer-container">
+                <div className="volunteer-text">
+                    BECOME A <br/> VOLUNTEER
+                </div>
+
+                <div className="volunteer-sub-text">Help make their world a better place, one paw at time</div>
             </div>
-            <div className="volunteer-text">
-                #<br/>BECOME A <br/> VOLUNTEER
+        </div>
+        <div style={{width:"100%",height:"1vw",backgroundColor:"#cf711f"}}></div>
+        <div className="volunteer-note">
+            <div className="volunteer-form-title">
+                Volunteer With Us
             </div>
-            <p className="volunteer-sub-text">Help make their world a better place, one paw at time</p>
+            <div className="volunteer-form-text">
+                We’re excited to have you join us and help 
+                create lasting impact<br/>
+                For any queries, concerns & comments
+                email us on - vinubillurushu@gmail.com<br/>
+                Do fill the form and we will get back to you shortly
+            </div>
         </div>
-        <div className="volunteer-form-title">
-            Volunteer With Us
+        <div className="volunteer-form">
+        <div class="container">
+  <form>
+    <div class="row">
+      <h4>Account</h4>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Full Name"/>
+        
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="email" placeholder="Email Adress"/>
+        
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="number" placeholder="Phone Number"/>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-half">
+        <h4>Date of Birth</h4>
+        <div class="input-group">
+          <div class="col-third">
+            <input type="text" placeholder="DD"/>
+          </div>
+          <div class="col-third">
+            <input type="text" placeholder="MM"/>
+          </div>
+          <div class="col-third">
+            <input type="text" placeholder="YYYY"/>
+          </div>
         </div>
-        <div className="volunteer-form-text">
-            We’re excited to have you join us and help 
-            create lasting impact<br/>
-            For any queries, concerns & comments
-            email us on - vinubillurushu@gmail.com<br/>
-            Do fill the form and we will get back to you shortly
+      </div>
+      <div class="col-half">
+        <h4>Gender</h4>
+        <div class="input-group">
+          <input id="gender-male" type="radio" name="gender" value="male"/>
+          <label for="gender-male">Male</label>
+          <input id="gender-female" type="radio" name="gender" value="female"/>
+          <label for="gender-female">Female</label>
         </div>
-        <div className="login-container">
-        <div class="login-box">
-            <p>Login</p>
-            <form>
-                <div class="user-box">
-                    <input required="" name="" type="text"/>
-                    <label>Name</label>
-                </div>
-                <div class="user-box">
-                    <input required="" name="" type="text"/>
-                    <label>Email id</label>
-                </div>
-                <div class="user-box">
-                    <input required="" name="" type="text"/>
-                    <label>Phone Number</label>
-                </div>
-                <div class="user-box">
-                    <input required="" name="" type="text"/>
-                    <label>Location</label>
-                </div>
-                <div class="user-box">
-                    <input required="" name="" type="text"/>
-                    <label>Hours Per Week</label>
-                </div>
-                <a href="#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Submit
-                </a>
-            </form>
-        <p>Don't have an account? <a href="" class="a2">Sign up!</a></p>
-        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h4>Terms and Conditions</h4>
+      <div class="input-group">
+        <input id="terms" type="checkbox"/>
+        <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+      </div>
+    </div>
+    <button type="submit" className="opening-buttons">
+        <span>Start Donating</span>
+    </button>
+  </form>
+</div>
         </div>
     </div>
   );
