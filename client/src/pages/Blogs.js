@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
 
-function Home({ isAuth }) {
+function Blogs({ isAuth }) {
   const [postLists, setPostList] = useState([]);
   const postsCollectionRef = collection(db, "posts");
 
@@ -52,4 +52,4 @@ function Home({ isAuth }) {
   );
 }
 
-export default Home;
+export default Blogs;

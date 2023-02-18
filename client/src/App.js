@@ -1,11 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
 import CreatePost from "./pages/CreatePost";
 import Login from "./pages/Login";
 import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
+import Home from "./homepage/home";
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -21,19 +22,41 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to="/"> Home </Link>
-
-        {!isAuth ? (
-          <Link to="/login"> Login </Link>
-        ) : (
-          <>
-            <Link to="/createpost"> Create Post </Link>
-            <button onClick={signUserOut}> Log Out</button>
-          </>
-        )}
+        <div>
+          <ul>
+            <li>Logo</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>About</li>
+            <li>Ways to Help</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <Link to="/blogs"> Blogs </Link>
+            </li>
+            <li>Contact Us</li>
+            <li>
+              {!isAuth ? (
+                <Link to="/login"> Login </Link>
+              ) : (
+                <>
+                  <Link to="/createpost"> Create Post </Link>
+                  <button className="button" onClick={signUserOut}>
+                    {" "}
+                    Log Out
+                  </button>
+                </>
+              )}
+            </li>
+          </ul>
+        </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Home isAuth={isAuth} />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/blogs" element={<Blogs isAuth={isAuth} />} />
         <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
         <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
       </Routes>
