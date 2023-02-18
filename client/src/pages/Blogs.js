@@ -24,7 +24,7 @@ function Blogs({ isAuth }) {
       }
     };
     getPosts();
-  }, [deletePost]);
+  }, [postLists]);
 
   return (
     <div>
