@@ -3,6 +3,8 @@ import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
 import "./blog.css";
 import CountUp from "react-countup";
+import HeroQuote from "../components/HeroQuote";
+import HeroBlog from "../components/HeroBlog";
 
 function Blogs({ isAuth }) {
   const [postLists, setPostList] = useState([]);
@@ -26,6 +28,7 @@ function Blogs({ isAuth }) {
 
   return (
     <div>
+      <HeroBlog />
       <section id="statistic" class="statistic-section one-page-section">
         <div class="container">
           <div class="row text-center">
@@ -69,6 +72,8 @@ function Blogs({ isAuth }) {
           </div>
         </div>
       </section>
+      <HeroQuote />
+
       <div className="homePage">
         {postLists.map((post) => {
           return (

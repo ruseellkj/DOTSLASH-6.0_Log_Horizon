@@ -48,8 +48,10 @@ function Adoptions({ isAuth }) {
                   )}
                 </div>
               </div>
-              <div className="postTextContainer"> {post.adoptionText} </div>
               <img src={post.image} alt="" />
+              <div className="postTextContainer">
+                <h4>{post.adoptionText}</h4>{" "}
+              </div>
               <h3>@{post.author.name}</h3>
             </div>
           );

@@ -1,9 +1,9 @@
 .statistic-section {
   padding-top: 70px;
   padding-bottom: 70px;
-  background: #00c6ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-  background: linear-gradient(to right, #0072ff, #00c6ff);
+  background: #fdf2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cf711f, #fdf2e9);
+  background: linear-gradient(to right, #cf711f, #fdf2e9);
 }
 
 .count-title {
