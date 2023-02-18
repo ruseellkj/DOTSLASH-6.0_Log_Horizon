@@ -3,10 +3,10 @@ import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+// import { fas } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
-  library.add(fab, fas);
+  library.add(fab);
   // function scrollToTop() {
   //   window.scrollTo({
   //     top: 0,
