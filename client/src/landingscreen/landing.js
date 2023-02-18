@@ -12,12 +12,12 @@ const Landing = () => {
             Helping stray dogs can be a rewarding and impactful way to contribute to your community.
             </div>
             <div className="two-buttons">
-            <button className="opening-buttons">
-                <span>Start Donating</span>
-            </button>
-            <a href="/volunteer" className="opening-buttons" >
-                <span>Be A Volunteer</span>
-            </a>
+                <button className="opening-buttons">
+                    <span>Start Donating</span>
+                </button>
+                <a href="/volunteer" className="opening-buttons" >
+                    <span>Be A Volunteer</span>
+                </a>
             </div>
         </div>
     );
