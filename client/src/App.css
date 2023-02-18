@@ -225,3 +225,7 @@ textarea {
   overflow: hidden;
   overflow-y: auto;
 }
+
+.post img {
+  width: 100%;
+}
