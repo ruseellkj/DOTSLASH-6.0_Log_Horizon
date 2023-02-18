@@ -1,0 +1,48 @@
+.logo-footer{
+    width:18vw;
+    height:26vh;
+    border: 2px solid black;
+    margin-left:5vw;
+    margin-top:3vw;
+}
+.footer{
+    width:100%;
+    border: 2px solid black;
+    height: 58vh;
+    display: flex;
+    position: relative;
+    
+}
+
+.footer-links{
+    width: 57%;
+    margin-left:12vw;
+    height:30vh;
+    margin-top:3vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ways-link,.about-link,.contact-link{
+    width:22%;
+    height:100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.footer-text{
+    line-height: 40px;
+}
+.social-links{
+    width:55%;
+    border:2px solid black;
+    height:18vh;
+    position: absolute;
+    bottom:3%;
+    left:22.5%    ;
+    display: flex;
+    justify-content: space-evenly;
+}
