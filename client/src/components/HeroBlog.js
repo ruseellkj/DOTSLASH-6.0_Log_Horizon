@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroBlog.css";
+import { Link } from "react-router-dom";
 
 const HeroBlog = () => {
   return (
@@ -18,7 +19,7 @@ const HeroBlog = () => {
         </p>
         <div class="butto">
           <button id="full" onclick="window.location.href = '#';">
-            Create a Blog Post
+            <Link to="/createpost"> Create Post </Link>
           </button>
 
           <button

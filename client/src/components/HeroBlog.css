@@ -45,6 +45,12 @@
   display: flex;
   gap: 1rem;
 }
+
+.butto a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #full {
   background: #e67e22;
 }
