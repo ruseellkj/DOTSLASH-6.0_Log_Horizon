@@ -23,7 +23,7 @@ function Adoptions({ isAuth }) {
       }
     };
     getPosts();
-  }, [deletePost]);
+  }, [adoptionLists]);
   return (
     <div>
       <HeroSection />
