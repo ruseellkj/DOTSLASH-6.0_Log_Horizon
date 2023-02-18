@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import CreateAdoption from "./pages/CreateAdoption";
 import Adoptions from "./pages/Adoptions";
 import Volunteer from "./volunteer/volunteer";
+import logo from './assets/logo.png';
 import Contact from "./pages/Contact";
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -29,7 +30,7 @@ function App() {
         <div>
           <ul>
             <li>
-              <Link to="/">Logo</Link>
+              <Link to="/"><img style={{height:"200px",border:"2px solid black",clipPath:"circle(30%)",marginLeft:"-60px"}} src={logo}/></Link>
             </li>
             <li>
               <Link to="/">Home</Link>

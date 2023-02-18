@@ -14,7 +14,7 @@ const Card = () => {
           <div className="img"><img src={doggo} alt=""/></div>
           <div className="details">
             <span className="name">850+</span>
-            <p>Saved Animals</p>
+            <p className="details-name-text">Saved Animals</p>
           </div>
         </div>
         {/* <!-- <a href="#">Follow</a> --> */}
@@ -24,7 +24,7 @@ const Card = () => {
           <div class="img"><img src={firstaid} alt=""/></div>
           <div class="details">
             <span class="name">700+</span>
-            <p>Animals spayed & neutered</p>
+            <p className="details-name-text">Animals spayed & neutered</p>
           </div>
         </div>
         {/* <!-- <a href="#">Follow</a> --> */}
@@ -34,7 +34,7 @@ const Card = () => {
           <div className="img"><img src={lovepng} alt=""/></div>
           <div className="details">
             <span className="name">75</span>
-            <p>dogs adopted, 310 released</p>
+            <p className="details-name-text">dogs adopted, 310 released</p>
           </div>
         </div>
          {/* <a href="#">Follow</a>  */}
@@ -54,7 +54,7 @@ const Card = () => {
           <div className="img"><img src={netpng} alt=""/></div>
           <div className="details">
             <span className="name">98</span>
-            <p>Animal abusers counseled</p>
+            <p className="details-name-text">Animal abusers counseled</p>
           </div>
         </div>
          {/* <a href="#">Follow</a>  */}
@@ -64,7 +64,7 @@ const Card = () => {
           <div className="img"><img src={salarypng} alt=""/></div>
           <div className="details">
             <span className="name">Rs 1.8L</span>
-            <p>of funding granted to 11 local shelters</p>
+            <p className="details-name-text">of funding granted to 11 local shelters</p>
           </div>
         </div>
          {/* <a href="#">Follow</a> */}
