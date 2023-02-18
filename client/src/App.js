@@ -13,9 +13,13 @@ import Adoptions from "./pages/Adoptions";
 import Volunteer from "./volunteer/volunteer";
 import logo from './assets/logo.png';
 import Contact from "./pages/Contact";
+import { useEffect } from "react";
+import Aboutus from "./aboutus/aboutus";
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
-
+  useEffect(() => {
+    document.title = "PawTopia";
+  }, []);
   const signUserOut = () => {
     signOut(auth).then(() => {
       localStorage.clear();
@@ -79,7 +83,7 @@ function App() {
 
         <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
         <Route path="/adoptions" element={<Adoptions isAuth={isAuth} />} />
-
+        <Route path="/about" element={<Aboutus />} />
         <Route
           path="/createadoption"
           element={<CreateAdoption isAuth={isAuth} />}
