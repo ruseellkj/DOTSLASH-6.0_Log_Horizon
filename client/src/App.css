@@ -124,7 +124,7 @@ textarea {
 }
 
 .loginPage {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
@@ -224,4 +224,8 @@ textarea {
   width: 100%;
   overflow: hidden;
   overflow-y: auto;
+}
+
+.post img {
+  width: 100%;
 }

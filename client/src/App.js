@@ -7,6 +7,8 @@ import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
 import Home from "./homepage/home";
+import CreateAdoption from "./pages/CreateAdoption";
+import Adoptions from "./pages/Adoptions";
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -35,6 +37,9 @@ function App() {
         <div>
           <ul>
             <li>
+              <Link to="/adoptions"> Adoptions </Link>
+            </li>
+            <li>
               <Link to="/blogs"> Blogs </Link>
             </li>
             <li>Contact Us</li>
@@ -44,6 +49,7 @@ function App() {
               ) : (
                 <>
                   <Link to="/createpost"> Create Post </Link>
+                  <Link to="/createadoption"> Create Adoption </Link>
                   <button className="button" onClick={signUserOut}>
                     {" "}
                     Log Out
@@ -59,6 +65,11 @@ function App() {
         <Route path="/blogs" element={<Blogs isAuth={isAuth} />} />
         <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
         <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
+        <Route path="/adoptions" element={<Adoptions isAuth={isAuth} />} />
+        <Route
+          path="/createadoption"
+          element={<CreateAdoption isAuth={isAuth} />}
+        />
       </Routes>
     </Router>
   );
