@@ -27,11 +27,16 @@
     height: 800px;
     background-image: url("../assets/bigpic.png");
     background-size: 100% 100%;
+    position: relative;
 }
 .stat-text{
     margin-top: 1.5vw;
 }
 .big-picture-text{
     color:white;
-    font-size: 60px;;
+    font-size: 60px;
+    position: absolute;
+    bottom:5vw;
+    left:5vw;
+
 }

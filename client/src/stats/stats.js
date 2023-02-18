@@ -103,7 +103,7 @@ const Stats = () => {
         </div>
         <div className="big-picture">
                 <div className="big-picture-text">
-                    Care They Need, Love They Deserve
+                    Care They Need, <br/>Love They Deserve
                 </div>
         </div>
     </div>
