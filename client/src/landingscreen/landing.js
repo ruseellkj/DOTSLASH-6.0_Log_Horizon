@@ -15,9 +15,9 @@ const Landing = () => {
             <button className="opening-buttons">
                 <span>Start Donating</span>
             </button>
-            <button className="opening-buttons">
+            <a href="/volunteer" className="opening-buttons" >
                 <span>Be A Volunteer</span>
-            </button>
+            </a>
             </div>
         </div>
     );
