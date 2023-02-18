@@ -1,13 +1,13 @@
-import './home.css';
-import Landing from '../landingscreen/landing';
-import Stats from '../stats/stats';
+import "./home.css";
+import Landing from "../landingscreen/landing";
+import Stats from "../stats/stats";
 const Home = () => {
   return (
     <div className="homepage">
-      <Landing/>
-      <Stats/>
+      <Landing />
+      <Stats />
     </div>
   );
-}
+};
 
 export default Home;
