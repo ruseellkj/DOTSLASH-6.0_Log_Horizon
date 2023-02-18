@@ -18,10 +18,12 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 .wrapper .card{
   background: #fff;
-  width: 430px;
+  width: 700px;
   display: flex;
   align-items: center;
   padding: 20px;
@@ -101,7 +103,11 @@ body{
 }
 .details span{
   font-weight: 600;
-  font-size: 18px;
+  font-size: 30px;
+
+}
+.details-name-text{
+    font-size:20px;
 }
 .card a{
   text-decoration: none;
