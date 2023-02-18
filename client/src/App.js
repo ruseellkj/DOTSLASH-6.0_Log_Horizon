@@ -10,7 +10,7 @@ import Home from "./homepage/home";
 import Footer from "./footer/footer";
 import CreateAdoption from "./pages/CreateAdoption";
 import Adoptions from "./pages/Adoptions";
-
+import Volunteer from "./volunteer/volunteer";
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
 
@@ -71,6 +71,7 @@ function App() {
           path="/createadoption"
           element={<CreateAdoption isAuth={isAuth} />}
         />
+        <Route path="/volunteer" element={<Volunteer />}/>
       </Routes>
       <Footer/>
     </Router>

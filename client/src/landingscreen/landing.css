@@ -57,6 +57,7 @@
     position: relative;
     transition: 0.5s;
 }
+
 .opening-buttons span:after{
     content: '»';
     position: absolute;
@@ -65,6 +66,7 @@
     right: -15px;
     transition: 0.5s;
 }
+
 .opening-buttons:hover span {
     padding-right: 15px;
 }
