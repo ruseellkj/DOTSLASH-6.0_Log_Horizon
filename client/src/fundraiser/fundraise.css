@@ -1,87 +1,93 @@
-.fundraise-container{
-    height:75.9vw;
-    width:100%;
+.fundraise-container {
+  height: 75.9vw;
+  width: 100%;
+  color: white;
 }
-.fundraise-pic{
-    width:100%;
-    height:40vw;
-    background-image:url('../assets/Rectangle10.png');
-    background-size: 100% 100%;
+.fundraise-pic {
+  width: 100%;
+  height: 45vw;
+  background-image: url("../assets/fundraise.jpg");
+  background-size: 100% 100%;
 }
-.fundraise-lots-heading{
-    font-size: 32px;
+.fundraise-lots-heading {
+  font-size: 32px;
+  color: black;
 }
-.fundraise-lots-text{
-    width:90%;
-    margin: auto;
-    margin-top: 4vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.fundraise-lots-text {
+  width: 90%;
+  margin: auto;
+  margin-top: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.fundraise-lots-subtext{
-    font-size: 24px;
+.fundraise-lots-subtext {
+  font-size: 24px;
 }
-.fundraise-text-container{
-    width:40%;
-    height:30vw;
-    float: left;
-    margin-left: 5vw;
-    margin-top: 9vw;
+.fundraise-text-container {
+  width: 40%;
+  height: 30vw;
+  float: left;
+  margin-left: 5vw;
+  margin-top: 9vw;
 }
-.fundraise-pic-about{
-    font-size: 30px;
-    width:150px;
-    
-}   
-.fundraise-pic-title{
-    margin-top: 3vw;
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: 600;
+.fundraise-pic-about {
+  font-size: 34px;
+  width: 150px;
+  color: black;
+  font-weight: 600;
 }
-.fundraise-pic-text{
-    font-size: 20px;
-    margin-top: 1vw;
-    font-weight: none;
-    line-height: 25px;
+.fundraise-pic-title {
+  margin-top: 3vw;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
 }
-.fundraise-stuff{
-    width:100%;
-    height:40vw;
+.fundraise-pic-text {
+  font-size: 20px;
+  margin-top: 1vw;
+  font-weight: none;
+  line-height: 25px;
 }
-.our-stuff{
-    margin: auto;
-    margin-top:5vw;
-    display: flex;
-    width:90%;
-    justify-content: space-evenly;
-    height:30vw;
+.fundraise-stuff {
+  width: 100%;
+  height: 40vw;
 }
-.our-mission,.our-vision,.future-scope{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width:100%;
-    height:100%;
+.our-stuff {
+  margin: auto;
+  margin-top: 5vw;
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  height: 30vw;
 }
-.fundraise-our-heading{
-    margin-top: 2vw;
-    font-size: 28px;
-    text-decoration: underline;
-    text-decoration-color: #cf711f ;
+.our-mission,
+.our-vision,
+.future-scope {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
-.fundraise-our-text{
-    margin-top: 3.7vw;
-    padding: 12px;
-    line-height: 28px;
-    font-size: 20px;
-    text-transform: none;
+.fundraise-our-heading {
+  margin-top: 2vw;
+  font-size: 28px;
+  text-decoration: underline;
+  text-decoration-color: #cf711f;
 }
-.our-mission,.our-vision{
-    border-right: 4px solid #cf711f;
-    border-style:dashed ;
-    border-left:none;
-    border-top:none;
-    border-bottom:none;
+.fundraise-our-text {
+  margin-top: 3.7vw;
+  padding: 12px;
+  line-height: 28px;
+  font-size: 20px;
+  text-transform: none;
+}
+.our-mission,
+.our-vision {
+  border-right: 4px solid #cf711f;
+  border-style: dashed;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
 }
