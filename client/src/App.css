@@ -66,7 +66,6 @@ nav .button {
 
 nav .button:hover {
   color: black;
-  font-weight: bold;
 }
 
 .createPostPage {
@@ -164,6 +163,7 @@ textarea {
 }
 .login-with-google-btn:active {
   background-color: #eeeeee;
+  
 }
 .login-with-google-btn:focus {
   outline: none;

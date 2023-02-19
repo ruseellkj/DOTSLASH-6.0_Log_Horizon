@@ -1,0 +1,73 @@
+.aboutus-container{
+    height:80vw;
+    width:100%;
+}
+.aboutus-pic{
+    width:100%;
+    height:40vw;
+    background-image:url('../assets/image16.png');
+    background-size: 100% 100%;
+}
+.aboutus-text-container{
+    width:40%;
+    height:30vw;
+    float: right;
+    margin-right: 7vw;
+    margin-top: 9vw;
+}
+.aboutus-pic-about{
+    font-size: 30px;
+    border-bottom: 2px solid black; 
+    width:150px;
+    
+}   
+.aboutus-pic-title{
+    margin-top: 3vw;
+    font-size: 40px;
+    line-height: 50px;
+}
+.aboutus-pic-text{
+    font-size: 20px;
+    margin-top: 1vw;
+    font-weight: none;
+    line-height: 25px;
+}
+.aboutus-stuff{
+    width:100%;
+    height:40vw;
+}
+.our-stuff{
+    margin: auto;
+    margin-top:5vw;
+    display: flex;
+    width:90%;
+    justify-content: space-evenly;
+    height:30vw;
+}
+.our-mission,.our-vision,.future-scope{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    height:100%;
+}
+.aboutus-our-heading{
+    margin-top: 2vw;
+    font-size: 28px;
+    text-decoration: underline;
+    text-decoration-color: #cf711f ;
+}
+.aboutus-our-text{
+    margin-top: 3.7vw;
+    padding: 12px;
+    line-height: 28px;
+    font-size: 20px;
+    text-transform: none;
+}
+.our-mission,.our-vision{
+    border-right: 4px solid #cf711f;
+    border-style:dashed ;
+    border-left:none;
+    border-top:none;
+    border-bottom:none;
+}
