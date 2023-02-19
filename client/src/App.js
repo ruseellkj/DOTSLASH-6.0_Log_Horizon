@@ -11,10 +11,11 @@ import Footer from "./components/Footer";
 import CreateAdoption from "./pages/CreateAdoption";
 import Adoptions from "./pages/Adoptions";
 import Volunteer from "./volunteer/volunteer";
-import logo from './assets/logo.png';
+import logo from "./assets/logo.png";
 import Contact from "./pages/Contact";
 import { useEffect } from "react";
 import Aboutus from "./aboutus/aboutus";
+import Thankyou from "./pages/Thankyou";
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
   useEffect(() => {
@@ -34,7 +35,17 @@ function App() {
         <div>
           <ul>
             <li>
-              <Link to="/"><img style={{height:"200px",border:"2px solid black",clipPath:"circle(30%)",marginLeft:"-60px"}} src={logo}/></Link>
+              <Link to="/">
+                <img
+                  style={{
+                    height: "200px",
+                    border: "2px solid black",
+                    clipPath: "circle(30%)",
+                    marginLeft: "-60px",
+                  }}
+                  src={logo}
+                />
+              </Link>
             </li>
             <li>
               <Link to="/">Home</Link>
@@ -80,10 +91,10 @@ function App() {
         <Route path="/blogs" element={<Blogs isAuth={isAuth} />} />
         <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
         <Route path="/contact" element={<Contact />} />
-
         <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
         <Route path="/adoptions" element={<Adoptions isAuth={isAuth} />} />
         <Route path="/about" element={<Aboutus />} />
+        <Route path="/thankyou" element={<Thankyou />} />
         <Route
           path="/createadoption"
           element={<CreateAdoption isAuth={isAuth} />}

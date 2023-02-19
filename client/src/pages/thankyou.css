@@ -1,0 +1,123 @@
+.t-wrapper,
+.t-wrapper .t-img-area,
+.t-buttons button {
+  background: #ecf0f3;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+.t-wrapper {
+  margin: 10px auto;
+  width: 350px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.t-wrapper .t-icon {
+  font-size: 17px;
+  color: #31344b;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.7;
+  top: 15px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.t-wrapper .t-icon i {
+  position: relative;
+  z-index: 9;
+}
+.t-wrapper .t-icon.arrow {
+  left: 15px;
+}
+.t-wrapper .t-icon.dots {
+  right: 15px;
+}
+.t-wrapper .t-img-area {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.t-img-area .t-inner-area {
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  border-radius: 50%;
+}
+.t-inner-area img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.t-wrapper .t-name {
+  font-size: 20px;
+  font-weight: 500;
+  color: #31344b;
+  margin: 10px 0 5px 0;
+}
+.t-wrapper .t-about {
+  color: #44476a;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.t-wrapper .icon:hover::before,
+.t-buttons button:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+.t-buttons button:hover:before {
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.t-wrapper .buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.t-buttons button {
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  color: #31344b;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 4;
+}
+.t-buttons button:first-child {
+  margin-right: 10px;
+}
+.t-buttons button:last-child {
+  margin-left: 10px;
+}
+
+.t-wrapper .t-txt {
+  font-size: 18px;
+  margin: 6px;
+  padding: 12px;
+}
+
+.t-buttons a {
+  text-decoration: none;
+  color: black;
+}
