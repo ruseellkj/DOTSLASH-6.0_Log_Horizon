@@ -47,6 +47,13 @@ function CreateAdoption({ isAuth }) {
         </div>
         <div className="inputGp">
           <label>Image of Animal: </label>
+          {/* <input
+            type="file"
+            onChange={(event) => {
+              setImage(event.target.value);
+            }}
+          /> */}
+          {/* <img src={file} /> */}
           <input
             placeholder="Url..."
             type="url"
