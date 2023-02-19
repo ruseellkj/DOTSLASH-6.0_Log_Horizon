@@ -8,6 +8,7 @@ function CreateAdoption({ isAuth }) {
   const [adoptionText, setAdoptionText] = useState("");
   const [location, setLocation] = useState("");
   const [image, setImage] = useState(null);
+  const [phone, setPhone] = useState("");
 
   const adoptionsCollectionRef = collection(db, "adoptions");
   let navigate = useNavigate();
@@ -18,6 +19,7 @@ function CreateAdoption({ isAuth }) {
       location,
       adoptionText,
       image,
+      phone,
       author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
     });
     navigate("/adoptions");
@@ -36,6 +38,7 @@ function CreateAdoption({ isAuth }) {
         <div className="inputGp">
           <label> Title:</label>
           <input
+            required
             placeholder="Title..."
             onChange={(event) => {
               setTitle(event.target.value);
@@ -56,9 +59,20 @@ function CreateAdoption({ isAuth }) {
         <div className="inputGp">
           <label> Location:</label>
           <input
+            required
             placeholder="Location..."
             onChange={(event) => {
               setLocation(event.target.value);
+            }}
+          />
+        </div>
+        <div className="inputGp">
+          <label> Contact:</label>
+          <input
+            required
+            placeholder="Phone number..."
+            onChange={(event) => {
+              setPhone(event.target.value);
             }}
           />
         </div>
