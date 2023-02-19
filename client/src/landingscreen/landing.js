@@ -1,5 +1,5 @@
 import "./landing.css";
-import doggo from "../assets/doggo_pic.png";
+import doggo from "../assets/doggopic2.png";
 
 const Landing = () => {
   return (

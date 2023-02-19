@@ -55,7 +55,12 @@ function App() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="#">Ways to Help</Link>
+              <div className="dropdown"><button class="dropbtn">Ways To Help</button>
+              <div class="dropdown-content">
+                <a href="https://buy.stripe.com/test_8wMaFE4Rt0Vw50s7st">Donate</a>
+                <a href="/volunteer">Volunteer</a>
+                <a href="/fundraiser">Fundraiser</a>
+              </div></div>
             </li>
           </ul>
         </div>

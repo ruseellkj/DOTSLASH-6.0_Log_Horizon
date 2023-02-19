@@ -256,8 +256,8 @@ const Stats = () => {
       </div>
       <div className="big-picture">
         <div className="big-picture-text">
-          Care They Need, <br />
-          Love They Deserve
+        “The animal is ignorant of the fact that he knows. 
+        The man is aware o the fact that he is ignorant”
         </div>
       </div>
     </div>
