@@ -8,7 +8,7 @@ import salarypng from '../assets/salary.png';
 const Card = () => {
   return (
     <div className="wrapper">
-    <div className="outer">
+    <div className="outer"> 
       <div className="card card-1">
         <div className="content">
           <div className="img"><img src={doggo} alt=""/></div>

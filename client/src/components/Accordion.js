@@ -42,7 +42,7 @@ const Accordion = () => {
             <h2>{item.question}</h2>
             <span className="plusminus">{selected === i ? "-" : "+"}</span>
           </div>
-          <div className={selected === i ? "content show" : "content"}>
+          <div className={selected === i ? "new-content show" : "new-content"}>
             <p>{item.answer}</p>
           </div>
         </div>
