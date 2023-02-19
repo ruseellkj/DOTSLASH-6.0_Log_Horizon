@@ -1,6 +1,6 @@
 /* Frequently Asked Questions */
 
-.faqs > .container {
+.faqs > .some-container {
   background-color: var(--white);
   padding: 50px 0;
   display: flex;
@@ -26,14 +26,16 @@
   cursor: pointer;
 }
 
-.content {
+.new-content {
   color: grey;
   max-height: 0;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  font-size: 18px;
+  line-height: 20px;
 }
 
-.content.show {
+.new-content.show {
   height: auto;
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);

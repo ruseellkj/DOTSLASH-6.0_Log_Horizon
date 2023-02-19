@@ -4,24 +4,24 @@ import "./Accordion.css";
 const Accordion = () => {
   const data = [
     {
-      question: "What is digital marketing?",
+      question: "Instagram Fundraiser",
       answer:
-        "Digital Marketing is any kind of marketing that is geared towards smartphones, laptop, tablets and basically any other device that is capable of connecting to Wi-Fi. ",
+        "Create a fundraiser on your Instagram bio. Rally your Family and Friends to raise $250 by adding a Fundraiser to your bio. Steps to add fundraiser to bio. New post. Tap Add Fundraiser. Choose Stray Animal Foundation of India from the list. Youll go to the “Fundraiser Details” page. Enter the details for your fundraiser and then tap Done.",
     },
     {
-      question: "Would my company benefit from digital marketing?",
+      question: "Kids Birthday Party Fundraiser",
       answer:
-        "You don't have to replace your traditional marketing efforts with digital ones, but it is 2023 and if the word digital doesn't come into your marketing strategy then your business will not thrive. It really is as simple as that. ",
+        "Have your child pick a program or dog to Sponsor. We will set up a fundraiser to with your pictures and information. Share with your family and friends. Once the money is raised, we will send a card with the dog photo and a message. “Celebrate Your Birthday Meaningfully”.",
     },
     {
-      question: "What is SEO?",
+      question: "Graduation Party Fundraiser",
       answer:
-        "Search Engine Optimisation is the practice of using on-page and off-page tweaks and tactics to ensure that your page ranks higher on search engines.  ",
+        "Have your son/daughter pick a program or dog to Sponsor. We will set up a fundraiser to with your pictures and information. Share with your family and friends. Once the money is raised, we will send a card with the dog photo and a message. “Celebrate Your graduation, milestone Meaningfully.” ",
     },
     {
-      question: "What are keywords?",
+      question: "Open a regional chapter",
       answer:
-        "Keywords are the words and phrases that searchers use- usualy on a search engine. These are the words that we use when looking for pages, images, videos, blogs, any kinf of information or content on the web really. These keywords need to be strategically inserted into your pages and content.",
+        "Contact us to open a regional chapter. We will send starter kit, rules and ideas. Organize runs. You can organize by contacting local run organizers. Contact local Indian associations to send out email and share on social media about charity run. Donate by going to donate us page. Optionally we care create a fundraiser to track donations",
     },
   ];
 
@@ -42,7 +42,7 @@ const Accordion = () => {
             <h2>{item.question}</h2>
             <span className="plusminus">{selected === i ? "-" : "+"}</span>
           </div>
-          <div className={selected === i ? "content show" : "content"}>
+          <div className={selected === i ? "new-content show" : "new-content"}>
             <p>{item.answer}</p>
           </div>
         </div>

@@ -1,9 +1,4 @@
 import "./stats.css";
-import Landing from "../landingscreen/landing";
-import stat1 from "../assets/Ellipse2.png";
-import stat2 from "../assets/Ellipse3.png";
-import stat3 from "../assets/Ellipse4.png";
-import stat4 from "../assets/Ellipse5.png";
 import { useEffect } from "react";
 const Stats = () => {
   useEffect(() => {

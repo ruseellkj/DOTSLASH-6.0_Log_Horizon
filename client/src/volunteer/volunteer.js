@@ -1,6 +1,4 @@
 import './volunteer.css';
-import map from '../assets/map.png';
-import pic from '../assets/Frame18.png';
 const Volunteer = () => {
   return (
     <div className="volunteer">
@@ -13,7 +11,7 @@ const Volunteer = () => {
                 <div className="volunteer-sub-text">Help make their world a better place, one paw at time</div>
             </div>
         </div>
-        <div style={{width:"100%",height:"1vw",backgroundColor:"#cf711f"}}></div>
+        {/* <div style={{width:"100%",height:"1vw",backgroundColor:"#cf711f"}}></div> */}
         <div className="volunteer-note">
             <div className="volunteer-form-title">
                 Volunteer With Us
