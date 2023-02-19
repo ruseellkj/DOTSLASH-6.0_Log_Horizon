@@ -69,6 +69,7 @@ nav .button:hover {
 }
 
 .createPostPage {
+  margin: 50px 0;
   width: 100%;
   height: calc(100vh - 80px);
   display: grid;
@@ -79,7 +80,7 @@ nav .button:hover {
   width: 500px;
   height: auto;
   padding: 20px;
-  background-color: #cf711f;
+  background: linear-gradient(to right, #cf711f, #cf711fc7);
   border-radius: 12px;
   color: white;
   display: flex;
@@ -122,6 +123,12 @@ nav .button:hover {
   cursor: pointer;
   font-size: 18px;
 }
+
+.cpContainer button:hover {
+  color: white;
+  background-color: #cf711f;
+}
+
 input,
 textarea {
   margin-top: 5px;
@@ -163,7 +170,6 @@ textarea {
 }
 .login-with-google-btn:active {
   background-color: #eeeeee;
-  
 }
 .login-with-google-btn:focus {
   outline: none;

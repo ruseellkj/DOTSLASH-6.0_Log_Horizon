@@ -52,6 +52,7 @@ function Adoptions({ isAuth }) {
               <div className="postTextContainer">
                 <h4>{post.adoptionText}</h4>{" "}
               </div>
+              <h3>Contact Details: {post.phone}</h3>
               <h3>@{post.author.name}</h3>
             </div>
           );
