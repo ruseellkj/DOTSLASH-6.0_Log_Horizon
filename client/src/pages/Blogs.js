@@ -29,44 +29,44 @@ function Blogs({ isAuth }) {
   return (
     <div>
       <HeroBlog />
-      <section id="statistic" class="statistic-section one-page-section">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-xs-12 col-md-4">
-              <div class="counter">
-                <i class="fa fa-coffee fa-2x stats-icon"></i>
-                <h2 class="timer count-title count-number">
+      <section id="statistic" className="statistic-section one-page-section">
+        <div className="container">
+          <div className="row text-center">
+            <div className="col-xs-12 col-md-4">
+              <div className="counter">
+                <i className="fa fa-coffee fa-2x stats-icon"></i>
+                <h2 className="timer count-title count-number">
                   <CountUp start={0} end={75} delay={0} />
                   M+
                 </h2>
-                <div class="stats-line-black"></div>
-                <p class="stats-text">
+                <div className="stats-line-black"></div>
+                <p className="stats-text">
                   stray dogs & cats living on India’s streets
                 </p>
               </div>
             </div>
-            <div class="col-xs-12 col-md-4">
-              <div class="counter">
-                <i class="fa fa-code fa-2x stats-icon"></i>
-                <h2 class="timer count-title count-number">
+            <div className="col-xs-12 col-md-4">
+              <div className="counter">
+                <i className="fa fa-code fa-2x stats-icon"></i>
+                <h2 className="timer count-title count-number">
                   <CountUp start={0} end={8.8} delay={0} />
                   M+
                 </h2>
-                <div class="stats-line-black"></div>
-                <p class="stats-text">
+                <div className="stats-line-black"></div>
+                <p className="stats-text">
                   strays in india’s shelters, and quickly . running out of space
                 </p>
               </div>
             </div>
-            <div class="col-xs-12 col-md-4">
-              <div class="counter">
-                <i class="fa fa-clock-o fa-2x stats-icon"></i>
-                <h2 class="timer count-title count-number">
+            <div className="col-xs-12 col-md-4">
+              <div className="counter">
+                <i className="fa fa-clock-o fa-2x stats-icon"></i>
+                <h2 className="timer count-title count-number">
                   <CountUp start={0} end={9} delay={0} />
                   M+
                 </h2>
-                <div class="stats-line-black"></div>
-                <p class="stats-text">stray homeless cats in india</p>
+                <div className="stats-line-black"></div>
+                <p className="stats-text">stray homeless cats in india</p>
               </div>
             </div>
           </div>
