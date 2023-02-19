@@ -15,6 +15,7 @@ import logo from './assets/logo.png';
 import Contact from "./pages/Contact";
 import { useEffect } from "react";
 import Aboutus from "./aboutus/aboutus";
+import Fundraise from "./fundraiser/fundraise";
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
   useEffect(() => {
@@ -80,7 +81,7 @@ function App() {
         <Route path="/blogs" element={<Blogs isAuth={isAuth} />} />
         <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
         <Route path="/contact" element={<Contact />} />
-
+        <Route path="/fundraise" element={<Fundraise/>}/>
         <Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
         <Route path="/adoptions" element={<Adoptions isAuth={isAuth} />} />
         <Route path="/about" element={<Aboutus />} />
