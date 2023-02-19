@@ -59,7 +59,7 @@ function App() {
               <div class="dropdown-content">
                 <a href="https://buy.stripe.com/test_8wMaFE4Rt0Vw50s7st">Donate</a>
                 <a href="/volunteer">Volunteer</a>
-                <a href="/fundraiser">Fundraiser</a>
+                <a href="/fundraise">Fundraiser</a>
               </div></div>
             </li>
           </ul>
