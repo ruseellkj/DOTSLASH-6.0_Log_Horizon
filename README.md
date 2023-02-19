@@ -1,6 +1,6 @@
 # DOTSLASH-6.0_Log_Horizon  
 
-Problem Statement : A 
+Problem Statement : Our website is a non profitable organisation that aims for the better welfare of animals, specifically stray animals. People can opt to donate, volunteer and even adopt animals. People can write articles in the website's blog related to animal welfare and thus create a community of animal lovers as well.   
     
     
     
