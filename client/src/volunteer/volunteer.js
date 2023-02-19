@@ -27,9 +27,9 @@ const Volunteer = () => {
             </div>
         </div>
         <div className="volunteer-form">
-        <div class="container">
+        <div class="new-container">
   <form>
-    <div class="row">
+    <div class="new-row">
       <h4>Account</h4>
       <div class="input-group input-group-icon">
         <input type="text" placeholder="Full Name"/>
@@ -44,7 +44,7 @@ const Volunteer = () => {
 
       </div>
     </div>
-    <div class="row">
+    <div class="new-row">
       <div class="col-half">
         <h4>Date of Birth</h4>
         <div class="input-group">
@@ -69,7 +69,7 @@ const Volunteer = () => {
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="new-row">
       <h4>Terms and Conditions</h4>
       <div class="input-group">
         <input id="terms" type="checkbox"/>
