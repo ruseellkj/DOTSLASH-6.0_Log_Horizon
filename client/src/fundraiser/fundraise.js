@@ -18,7 +18,7 @@ const Fundraise = () => {
                 </div>
             </div>
         </div>
-        <div style={{width:"100%",height:"1vw",backgroundColor:"#cf711f"}}></div>
+        {/* <div style={{width:"100%",height:"1vw",backgroundColor:"#cf711f"}}></div> */}
 
         <div className="fundraise-lots-text">
             <div className="fundraise-lots-heading">IDEAS TO RAISE FUNDS:</div>
