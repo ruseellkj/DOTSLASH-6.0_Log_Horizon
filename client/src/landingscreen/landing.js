@@ -17,7 +17,11 @@ const Landing = () => {
       </div>
       <div className="two-buttons">
         <button className="opening-buttons">
-          <span>Start Donating</span>
+          <span>
+            <a href="https://buy.stripe.com/test_8wMaFE4Rt0Vw50s7st">
+              Start Donating
+            </a>
+          </span>
         </button>
         <a href="/volunteer" className="opening-buttons">
           <span>Be A Volunteer</span>

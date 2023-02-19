@@ -16,10 +16,10 @@ const HeroSection = () => {
               home but also help to reduce the number of homeless animals in
               your community.
             </p>
-            <a href="#" class="btn btn--fill margin-right-btn">
-              <Link to="/createadoption"> Create Adoption Post </Link>
+            <a href="/createadoption" class="btn btn--fill margin-right-btn">
+              Create Adoption Post
             </a>
-            <a href="#" class="btn btn--outline margin-right-btn">
+            <a href="/about" class="btn btn--outline margin-right-btn">
               Learn more &darr;
             </a>
           </div>

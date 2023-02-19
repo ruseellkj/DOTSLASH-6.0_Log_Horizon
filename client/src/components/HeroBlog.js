@@ -18,15 +18,12 @@ const HeroBlog = () => {
           <br />
         </p>
         <div class="butto">
-          <button id="full" onclick="window.location.href = '#';">
-            <Link to="/createpost"> Create Post </Link>
+          <button id="full">
+            <a href="/createpost">Create Post</a>
           </button>
 
-          <button
-            id="outline"
-            onclick="window.location.href = 'https://example.com';"
-          >
-            Read more
+          <button id="outline">
+            <a href="/contact">Read more</a>
           </button>
         </div>
       </div>

@@ -10,7 +10,6 @@
   line-height: 80px;
   margin-left: 5vw;
   margin-top: 5vw;
-  
 }
 .opening-text {
   margin-left: 5.5vw;
@@ -55,6 +54,12 @@
   position: relative;
   transition: 0.5s;
 }
+
+.opening-buttons a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .opening-buttons span:after {
   content: "»";
   position: absolute;
