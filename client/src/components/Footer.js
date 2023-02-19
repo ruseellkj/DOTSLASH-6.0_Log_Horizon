@@ -31,22 +31,22 @@ const Footer = () => {
         </div>
         <ul class="list-inline">
           <li class="list-inline-item">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">About</a>
+            <a href="/about">About</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">Ways to Help</a>
+            <a href="/volunteer">Ways to Help</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">Adoptions</a>
+            <a href="/adoptions">Adoptions</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">Blogs</a>
+            <a href="/blogs">Blogs</a>
           </li>
           <li class="list-inline-item">
-            <a href="#">Contact</a>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
         <p class="copyright">PawTopia © 2023</p>

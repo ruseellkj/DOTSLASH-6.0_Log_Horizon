@@ -5,7 +5,7 @@
   box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
 }
 .t-wrapper {
-  margin: 10px auto;
+  margin: 40px auto;
   width: 350px;
   padding: 30px;
   border-radius: 10px;
@@ -58,12 +58,14 @@
   object-fit: cover;
 }
 .t-wrapper .t-name {
+  line-height: 20px;
   font-size: 20px;
   font-weight: 500;
   color: #31344b;
   margin: 10px 0 5px 0;
 }
 .t-wrapper .t-about {
+  line-height: 18px;
   color: #44476a;
   font-weight: 400;
   font-size: 14px;
@@ -78,7 +80,7 @@
   bottom: 0;
   right: 0;
   border-radius: 50%;
-  background: #ecf0f3;
+  background: #ceced1;
   box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
 }
 .t-buttons button:hover:before {
@@ -112,6 +114,7 @@
 }
 
 .t-wrapper .t-txt {
+  line-height: 18px;
   font-size: 18px;
   margin: 6px;
   padding: 12px;
