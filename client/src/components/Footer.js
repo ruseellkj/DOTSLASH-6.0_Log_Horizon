@@ -6,53 +6,53 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 // import { fas } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
-  library.add(fab);
-  // function scrollToTop() {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  return (
-    <div class="footer-basic">
-      <footer>
-        <div class="social">
-          <a href="#">
-            <FontAwesomeIcon icon="fa-brands fa-square-instagram" />
-          </a>
-          <a href="#">
-            <FontAwesomeIcon icon="fa-brands fa-linkedin" />
-          </a>
-          <a href="#">
-            <FontAwesomeIcon icon="fa-brands fa-square-twitter" />
-          </a>
-          <a href="#">
-            <FontAwesomeIcon icon="fa-brands fa-square-facebook" />
-          </a>
+    library.add(fab);
+    // function scrollToTop() {
+    //   window.scrollTo({
+    //     top: 0,
+    //     behavior: "smooth",
+    //   });
+    return (
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="#">
+                        <FontAwesomeIcon icon="fa-brands fa-square-instagram" />
+                    </a>
+                    <a href="#">
+                        <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                    </a>
+                    <a href="#">
+                        <FontAwesomeIcon icon="fa-brands fa-square-twitter" />
+                    </a>
+                    <a href="#">
+                        <FontAwesomeIcon icon="fa-brands fa-square-facebook" />
+                    </a>
+                </div>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="/">Home</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="/about">About</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="/volunteer">Ways to Help</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="/adoptions">Adoptions</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="/blogs">Blogs</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <p class="copyright">PawTopia © 2023</p>
+            </footer>
         </div>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="/">Home</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="/about">About</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="/volunteer">Ways to Help</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="/adoptions">Adoptions</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="/blogs">Blogs</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-        <p class="copyright">PawTopia © 2023</p>
-      </footer>
-    </div>
-  );
+    );
 };
 
 export default Footer;
